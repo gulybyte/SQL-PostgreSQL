@@ -1,12 +1,6 @@
 # SELECT's
 > tabela base de uso para aqui:
 
-navegue direto para:
- - <a href="#A">básico de `SELECT`</a>
- - <a href="#B">filtrando consultas com `WHERE` e clausulas `LIKE`, `IN` e `BETWEEN`</a>
- - <a href="#C">filtrando consultas com `WHERE` e clausulas `AND`, `OR` e `NOT`</a>
- - <a href="#D">filtrando consultas com `ORDER BY`</a>
-
 ```sql
 insert into customers (id, customer_name, contact_name, address, city, postal_code, country) values
 (1, 'Alfreds Futterkiste',	'Maria Anders',	'Obere Str. 57',	'Berlin',	'12209',	'Germany'),
@@ -15,6 +9,12 @@ insert into customers (id, customer_name, contact_name, address, city, postal_co
 (4,	'Around the Horn',	'Thomas Hardy',	'120 Hanover Sq.',	'London',	'WA1 1DP',	'UK'),
 (5,	'Berglunds snabbköp',	'Christina Berglund',	'Berguvsvägen 8',	'Luleå',	'S-958 22',	'Sweden');
 ```
+
+navegue direto para:
+ - <a href="#A">básico de `SELECT`</a>
+ - <a href="#B">filtrando consultas com `WHERE` e clausulas `LIKE`, `IN` e `BETWEEN`</a>
+ - <a href="#C">filtrando consultas com `WHERE` e clausulas `AND`, `OR` e `NOT`</a>
+ - <a href="#D">filtrando consultas com `ORDER BY`</a>
 
 <div id="A"></div>
 
@@ -80,7 +80,7 @@ insert into customers (id, customer_name, contact_name, address, city, postal_co
  SELECT * FROM customers where not id = 2;
  ```
 
-<div id="C"></div>
+<div id="D"></div>
 
 ### ORDER BY
 > Essa é fácil
