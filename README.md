@@ -1,8 +1,12 @@
+# Dos mesmos criadores de [Java-Assuntos-Gerais](https://github.com/gulybyte/Java-Assuntos-Gerais), agora SQL-PostgreSQL
+
+### Segue e mesma filosofia, não é um tutorial, é só um lugar PARA MIM FAZER CONSULTAS
+
  - [Començando (psql)](INIT.md)
  - [SELECT'ions](SELECT.md)
  - [Where, Joins?](/JOIN.md)
 
-# PostgreSQL
+# Caracteristicas do PostgreSQL
  - <b>ACID - </b> (Atomicidade, Consistencia, Isolament e Durabilidade);
  - <b>MVVC - </b> Controle de Concorrência Multiversão;
  - <b>Views - </b> views materializadas, procedimentos armazenados, triggers e outros tipos de objetos para Bancos Relacionais;
