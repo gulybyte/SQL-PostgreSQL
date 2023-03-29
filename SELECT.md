@@ -2,18 +2,29 @@
 > tabela base de uso para aqui:
 
 ```sql
+create table customers (
+	id bigserial not null primary key,
+	customer_name VARCHAR(255),
+	contact_name VARCHAR(255),
+	address VARCHAR(255),
+	city VARCHAR(255),
+	postal_code VARCHAR(255),
+	country VARCHAR(255)
+);
+
 insert into customers (id, customer_name, contact_name, address, city, postal_code, country) values
 (1, 'Alfreds Futterkiste',	'Maria Anders',	'Obere Str. 57',	'Berlin',	'12209',	'Germany'),
 (2,	'Ana Trujillo Emparedados y helados',	'Ana Trujillo',	'Avda. de la Constitución 2222',	'México D.F.',	'05021',	'Mexico'),
 (3,	'Antonio Moreno Taquería',	'Antonio Moreno',	'Mataderos 2312',	'México D.F.',	'05023',	'Mexico'),
 (4,	'Around the Horn',	'Thomas Hardy',	'120 Hanover Sq.',	'London',	'WA1 1DP',	'UK'),
-(5,	'Berglunds snabbköp',	'Christina Berglund',	'Berguvsvägen 8',	'Luleå',	'S-958 22',	'Sweden');
+(5,	'Berglunds snabbköp',	'Christina Berglund',	'Berguvsvägen 8',	'Luleå',	'S-958 22',	'Sweden'),
+(6,	'xapiscada',	'Alex Tordi',	'GOL 2007',	'KLC',	'5186',	'');
 ```
 
 navegue direto para:
  - <a href="#A">básico de `SELECT`</a>
- - <a href="#C">filtrando consultas com `WHERE`</a>
- - <a href="#C">filtrando consultas com `WHERE` e clausulas `LIKE`, `IN` e `BETWEEN`</a>
+ - <a href="#B">filtrando consultas com `WHERE`</a>
+ - <a href="#C">filtrando consultas com `WHERE` e clausulas `IS NULL` `LIKE`, `IN` e `BETWEEN`</a>
  - <a href="#D">filtrando consultas com `WHERE` e clausulas `AND`, `OR` e `NOT`</a>
  - <a href="#E">filtrando consultas com `ORDER BY`</a>
 
@@ -52,8 +63,12 @@ navegue direto para:
  
 <div id="C"></div>
  
-### WHERE -> LIKE, IN e BETWEEN
- - `BETWEEN` intervalo, ex: entre duas datas:
+### WHERE -> IS NULL, LIKE, IN e BETWEEN
+   - `IS NULL`, perceba que não é possivel verificar de for nulo com `=`, para isso use clausula `IS NULL` ou `IS NOT NULL`, o nome já diz, `IS NULL` vai dizer trazer onde determinado valor é nulo, e `IS NOT NULL` vai trazer onde aquele valor não for nulo, ex:
+  ```sql
+ select id, customer_name, country from customers where country is null;
+ ```
+ - `BETWEEN` intervalo, ex entre duas datas:
  ```sql
  SELECT FROM * table_name WHERE data_vencimento BETWEEN '2001-02-01' AND '2007-03-01';
  ```
