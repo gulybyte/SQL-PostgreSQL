@@ -12,9 +12,10 @@ insert into customers (id, customer_name, contact_name, address, city, postal_co
 
 navegue direto para:
  - <a href="#A">básico de `SELECT`</a>
- - <a href="#B">filtrando consultas com `WHERE` e clausulas `LIKE`, `IN` e `BETWEEN`</a>
- - <a href="#C">filtrando consultas com `WHERE` e clausulas `AND`, `OR` e `NOT`</a>
- - <a href="#D">filtrando consultas com `ORDER BY`</a>
+ - <a href="#C">filtrando consultas com `WHERE`</a>
+ - <a href="#C">filtrando consultas com `WHERE` e clausulas `LIKE`, `IN` e `BETWEEN`</a>
+ - <a href="#D">filtrando consultas com `WHERE` e clausulas `AND`, `OR` e `NOT`</a>
+ - <a href="#E">filtrando consultas com `ORDER BY`</a>
 
 <div id="A"></div>
 
@@ -40,7 +41,7 @@ navegue direto para:
 
 <div id="B"></div>
 
-### WHERE -> LIKE, IN e BETWEEN
+### WHERE
 > Antes o básico de WHERE
 
  - `WHERE`, é a mais simples, básicamente voce chega e fala, me traga esse resultado <b>onde</b> essa condição for verdadeira
@@ -48,7 +49,10 @@ navegue direto para:
    SELECT * FROM customers where country = 'Mexico';
    ```
    - é póssivel usar condicionais para tipos de números R, são eles `<`, `<=`, `>`, `>=`, `<> or !=`;
-#### para condicionais mais avançadas (`LIKE`, `IN` e `BETWEEN`), temos:
+ 
+<div id="C"></div>
+ 
+### WHERE -> LIKE, IN e BETWEEN
  - `BETWEEN` intervalo, ex: entre duas datas:
  ```sql
  SELECT FROM * table_name WHERE data_vencimento BETWEEN '2001-02-01' AND '2007-03-01';
@@ -62,7 +66,7 @@ navegue direto para:
  SELECT * FROM customers where id IN (2,4);
  ```
 
-<div id="C"></div>
+<div id="D"></div>
 
 ### WHERE -> AND, OR e NOT
 > Já vimos um pouco do AND, mas enfim... (percebe que se quiser pode fazer combinação de tudo junto)
@@ -80,7 +84,7 @@ navegue direto para:
  SELECT * FROM customers where not id = 2;
  ```
 
-<div id="D"></div>
+<div id="E"></div>
 
 ### ORDER BY
 > Essa é fácil
