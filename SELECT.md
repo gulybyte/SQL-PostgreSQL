@@ -1,6 +1,10 @@
 # SELECT's
 > tabela base de uso para aqui:
 
+navegue direto para:
+ - <a href="#A">filtro</a>
+ - <a href="#B">Filtrando Dados</a>
+
 ```sql
 insert into customers (id, customer_name, contact_name, address, city, postal_code, country) values
 (1, 'Alfreds Futterkiste',	'Maria Anders',	'Obere Str. 57',	'Berlin',	'12209',	'Germany'),
@@ -9,6 +13,8 @@ insert into customers (id, customer_name, contact_name, address, city, postal_co
 (4,	'Around the Horn',	'Thomas Hardy',	'120 Hanover Sq.',	'London',	'WA1 1DP',	'UK'),
 (5,	'Berglunds snabbköp',	'Christina Berglund',	'Berguvsvägen 8',	'Luleå',	'S-958 22',	'Sweden');
 ```
+
+<div id="A"></div>
 
 ## Básico
 ### Existem 3 tipos básicos:
@@ -24,6 +30,8 @@ insert into customers (id, customer_name, contact_name, address, city, postal_co
  ```sql
  SELECT DISTINCT customer_name, country FROM customers;
  ```
+
+<div id="B"></div>
 
 ### Filtrando os dados:
 > através de condicionais
