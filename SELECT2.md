@@ -11,3 +11,10 @@
 	  LIMIT número_de_itens_por_página
    	  OFFSET(página - 1) * número_de_itens_por_página;
  ```
+
+# MIN e MAX
+> Sinceramente não vejo muita ultilidade nisso, talvez com wheres fique interessante
+ - Simples, busque o menor ou maior valor de uma coluna (adicionei um where, mas não tem nescessidade):
+ ```sql
+ select min(column_name) from table_name where condition;
+ ```
