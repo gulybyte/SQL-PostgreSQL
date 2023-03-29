@@ -4,7 +4,7 @@
 ### Segue e mesma filosofia, não é um tutorial, é só um lugar PARA MIM FAZER CONSULTAS
 
  - [Començando (psql)](INIT.md)
- - [INSERT](INSERT.md)
+ - [INSERT e UPDATE e DELETE](INSERT.md)
  - [SELECT's part 1 (básico, where e order by)](SELECT.md)
  - [Where, Joins?](/JOIN.md)
 
