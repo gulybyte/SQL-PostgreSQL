@@ -1,4 +1,5 @@
- - [Començando](INIT.md)
+ - [Començando (psql)](INIT.md)
+ - [SELECT'ions](SELECT.md)
  - [Where, Joins?](/JOIN.md)
 
 # PostgreSQL
