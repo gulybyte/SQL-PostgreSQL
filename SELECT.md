@@ -5,6 +5,7 @@ navegue direto para:
  - <a href="#A">básico de `SELECT`</a>
  - <a href="#B">filtrando consultas com `WHERE` e clausulas `LIKE`, `IN` e `BETWEEN`</a>
  - <a href="#C">filtrando consultas com `WHERE` e clausulas `AND`, `OR` e `NOT`</a>
+ - <a href="#D">filtrando consultas com `ORDER BY`</a>
 
 ```sql
 insert into customers (id, customer_name, contact_name, address, city, postal_code, country) values
@@ -17,7 +18,7 @@ insert into customers (id, customer_name, contact_name, address, city, postal_co
 
 <div id="A"></div>
 
-## Básico
+# Básico
 ### Existem 3 tipos básicos:
  - O primeiro é SELECT com `*`, que significa busque trazendo todas as colunas
  ```sql
@@ -35,8 +36,7 @@ insert into customers (id, customer_name, contact_name, address, city, postal_co
 
 
 
-## Filtrando os dados:
-> através de condicionais
+# Filtrando os dados (através de condicionais):
 
 <div id="B"></div>
 
@@ -48,11 +48,67 @@ insert into customers (id, customer_name, contact_name, address, city, postal_co
    SELECT * FROM customers where country = 'Mexico';
    ```
    - é póssivel usar condicionais para tipos de números R, são eles `<`, `<=`, `>`, `>=`, `<> or !=`;
- - para condicionais mais avançadas (`LIKE`, `IN` e `BETWEEN`), temos:
-   - `BETWEEN` intervalo, ex: entre duas datas `SELECT FROM * table_name WHERE data_vencimento BETWEEN '2001-02-01' AND '2007-03-01'`;
-   - `LIKE`, buscar sem completar (costumam chamar por ai isso de pattern), se clausula `%` for colocada antes do texto, voce não precisa saber primeiras letras, já se colocar depois voce não precisa completa-lo depois dos primeiros caracteres, já se colocar antes e no fim se colocar só o meio do texto ele já acha, ex `SELECT * FROM customers WHERE country LIKE '%xic%';`;
-   - `IN` tipo um `=` só que vc consegue determinar a condicional para varios valores, ex: `SELECT * FROM customers where id IN (2,4);`;
+#### para condicionais mais avançadas (`LIKE`, `IN` e `BETWEEN`), temos:
+ - `BETWEEN` intervalo, ex: entre duas datas:
+ ```sql
+ SELECT FROM * table_name WHERE data_vencimento BETWEEN '2001-02-01' AND '2007-03-01';
+ ```
+ - `LIKE`, buscar sem completar (costumam chamar por ai isso de pattern), se clausula `%` for colocada antes do texto, voce não precisa saber primeiras letras, já se colocar depois voce não precisa completa-lo depois dos primeiros caracteres, já se colocar antes e no fim se colocar só o meio do texto ele já acha, ex:
+ ```sql
+ SELECT * FROM customers WHERE country LIKE '%xic%';
+ ```
+ - `IN` tipo um `=` só que vc consegue determinar a condicional para varios valores, ex:
+ ```sql
+ SELECT * FROM customers where id IN (2,4);
+ ```
 
 <div id="C"></div>
 
 ### WHERE -> AND, OR e NOT
+> Já vimos um pouco do AND, mas enfim... (percebe que se quiser pode fazer combinação de tudo junto)
+
+ - `AND`, o nome já diz <b>and (e)</b>, no fim das contas vai usar quando quiser validar varias condições juntos, tipo um se isso <b>e</b> isso <b>e</b> isso estiver correto, então..., ex:
+ ```sql
+ SELECT * FROM customers where id = 2 and country = 'Mexico';
+ ```
+ - `OR`, mesma coisa, nome já diz <b>or (ou)</b>, use quando precisar validar uma condição ou outra, tipo um se isso <b>ou</b> isso <b>ou</b> isso estiver correto, então..., ex:
+ ```sql
+ SELECT * FROM customers where id = 2 or country = 'Mexic';
+ ```
+ - `NOT`, a bosta do nome já diz <b>not (não/negação)</b>, da pra resumir o `NOT` em um simples `!WHERE`, mas não é assim, ex:
+ ```sql
+ SELECT * FROM customers where not id = 2;
+ ```
+
+<div id="C"></div>
+
+### ORDER BY
+> Essa é fácil
+
+ - `ASC` (default), ordene de forma crescente
+ ```sql
+ SELECT * FROM customers order by id;
+ ```
+  - `DESC`, ordene de forma decrescente
+ ```sql
+ SELECT * FROM customers order by id desc;
+ ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
