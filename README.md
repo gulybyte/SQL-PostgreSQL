@@ -1,5 +1,5 @@
 [Començando](INIT.md)
-
+[Where, Joins?](/JOIN.md)
 
 # PostgreSQL
  - <b>ACID - </b> (Atomicidade, Consistencia, Isolament e Durabilidade);
