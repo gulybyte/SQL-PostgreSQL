@@ -18,13 +18,22 @@ insert into customers (id, customer_name, contact_name, address, city, postal_co
  ```
   - O segundo é SELECT especificando colunas (conhecido como consulta atômica), voce também pode usá-lo como uma forma de deixar explicito as colunas
  ```sql
- SELECT column1, column2 FROM customers;
+ SELECT customer_name, country FROM customers;
  ```
   - O terceiro é SELECT com `DISTINCT`, que significa me traga os dados sem se repetir (note que é obrigatorio especificar as colunas)
  ```sql
- SELECT DISTINCT column1, column2 FROM customers;
+ SELECT DISTINCT customer_name, country FROM customers;
  ```
 
 ### Filtrando os dados:
 > através de condicionais
- - `WHERE`
+ - `WHERE`, é a mais simples, básicamente voce chega e fala, me traga esse resultado <b>onde</b> essa condição for verdadeira
+   ```sql
+   SELECT * FROM customers where country = 'Mexico';
+   ```
+   - é póssivel usar condicionais para tipos de números R, são eles `<`, `<=`, `>`, `>=`, `<> or !=`;
+   - para condicionais mais avançadas temos:
+     - `BETWEEN` intervalo, ex: entre duas datas `SELECT FROM * table_name WHERE data_vencimento BETWEEN '2001-02-01' AND '2007-03-01'`;
+     - `LIKE`, buscar sem completar (costumam chamar por ai isso de pattern), se clausula `%` for colocada antes do texto, voce não precisa saber primeiras letras, já se colocar depois voce não precisa completa-lo depois dos primeiros caracteres, já se colocar antes e no fim se colocar só o meio do texto ele já acha, ex `SELECT * FROM customers WHERE country LIKE '%xic%';`;
+     - `IN` tipo um `=` só que vc consegue determinar a condicional para varios valores, ex: `SELECT * FROM customers where id IN (2,4);`;
+
