@@ -2,8 +2,9 @@
 > tabela base de uso para aqui:
 
 navegue direto para:
- - <a href="#A">filtro</a>
- - <a href="#B">Filtrando Dados</a>
+ - <a href="#A">básico de `SELECT`</a>
+ - <a href="#B">filtrando consultas com `WHERE` e clausulas `LIKE`, `IN` e `BETWEEN`</a>
+ - <a href="#C">filtrando consultas com `WHERE` e clausulas `AND`, `OR` e `NOT`</a>
 
 ```sql
 insert into customers (id, customer_name, contact_name, address, city, postal_code, country) values
@@ -31,17 +32,27 @@ insert into customers (id, customer_name, contact_name, address, city, postal_co
  SELECT DISTINCT customer_name, country FROM customers;
  ```
 
+
+
+
+## Filtrando os dados:
+> através de condicionais
+
 <div id="B"></div>
 
-### Filtrando os dados:
-> através de condicionais
+### WHERE -> LIKE, IN e BETWEEN
+> Antes o básico de WHERE
+
  - `WHERE`, é a mais simples, básicamente voce chega e fala, me traga esse resultado <b>onde</b> essa condição for verdadeira
    ```sql
    SELECT * FROM customers where country = 'Mexico';
    ```
    - é póssivel usar condicionais para tipos de números R, são eles `<`, `<=`, `>`, `>=`, `<> or !=`;
-   - para condicionais mais avançadas temos:
-     - `BETWEEN` intervalo, ex: entre duas datas `SELECT FROM * table_name WHERE data_vencimento BETWEEN '2001-02-01' AND '2007-03-01'`;
-     - `LIKE`, buscar sem completar (costumam chamar por ai isso de pattern), se clausula `%` for colocada antes do texto, voce não precisa saber primeiras letras, já se colocar depois voce não precisa completa-lo depois dos primeiros caracteres, já se colocar antes e no fim se colocar só o meio do texto ele já acha, ex `SELECT * FROM customers WHERE country LIKE '%xic%';`;
-     - `IN` tipo um `=` só que vc consegue determinar a condicional para varios valores, ex: `SELECT * FROM customers where id IN (2,4);`;
+ - para condicionais mais avançadas (`LIKE`, `IN` e `BETWEEN`), temos:
+   - `BETWEEN` intervalo, ex: entre duas datas `SELECT FROM * table_name WHERE data_vencimento BETWEEN '2001-02-01' AND '2007-03-01'`;
+   - `LIKE`, buscar sem completar (costumam chamar por ai isso de pattern), se clausula `%` for colocada antes do texto, voce não precisa saber primeiras letras, já se colocar depois voce não precisa completa-lo depois dos primeiros caracteres, já se colocar antes e no fim se colocar só o meio do texto ele já acha, ex `SELECT * FROM customers WHERE country LIKE '%xic%';`;
+   - `IN` tipo um `=` só que vc consegue determinar a condicional para varios valores, ex: `SELECT * FROM customers where id IN (2,4);`;
 
+<div id="C"></div>
+
+### WHERE -> AND, OR e NOT
