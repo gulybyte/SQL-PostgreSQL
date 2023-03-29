@@ -5,3 +5,9 @@
  ```sql
  SELECT * FROM table_name LIMIT 5;
  ```
+ - Top, mas isso só define LIMIT, como faço para escolher a página?, simples (postgres é lindo demais):
+ ```sql
+ SELECT * FROM table_name
+	  LIMIT número_de_itens_por_página
+   OFFSET(página - 1) * número_de_itens_por_página
+ ```
