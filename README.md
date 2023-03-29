@@ -3,7 +3,8 @@
 ### Segue e mesma filosofia, não é um tutorial, é só um lugar PARA MIM FAZER CONSULTAS
 
  - [Començando (psql)](INIT.md)
- - [SELECT'ions](SELECT.md)
+ - [INSERT](INSERT.md)
+ - [SELECT's part 1 (básico, where e order by)](SELECT.md)
  - [Where, Joins?](/JOIN.md)
 
 # Caracteristicas do PostgreSQL
