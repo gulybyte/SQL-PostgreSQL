@@ -22,5 +22,3 @@
    - <b>indexaçāo avançada</b> (b-tree, hash, GiST, GIN..):
    - <b>suporte a JSON</b> (para aplicações web):
  - <b>Seguro - </b> autenticação, criptografia de dados, controle de acesso, auditoria para acompanhar as atividades do usuario;
-
-[Where, Joins?](/JOIN.md)
