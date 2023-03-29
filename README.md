@@ -1,5 +1,5 @@
 # Dos mesmos criadores de [Java-Assuntos-Gerais](https://github.com/gulybyte/Java-Assuntos-Gerais), agora SQL-PostgreSQL
-> No geral eu não pensava em fazer, até por ORM simplificam demais, mas é bom saber o que a por baixo dos panos, e, principalmente porque se eu pegar projetos legados vou ter minha própria "documentação", além de que tem aqui configurações básicas
+> No geral eu não pensava em fazer, até por ORM simplificam demais, mas é bom saber o que a por baixo dos panos, e, principalmente porque se eu pegar projetos legados vou ter minha própria "documentação" (e que também serve pra escrever flyway's), além de que tem aqui configurações básicas
 
 ### Segue e mesma filosofia, não é um tutorial, é só um lugar PARA MIM FAZER CONSULTAS
 
