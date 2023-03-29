@@ -76,7 +76,7 @@ navegue direto para:
  ```sql
  SELECT * FROM customers WHERE country LIKE '%xic%';
  ```
- <h6>Tenha cuidado, pois LIKE tende a ser muito perigoso em projetos grandes, porém ainda tem varias outras coisas possiveis nele que não citei, <a href="w3schools.com/sql/sql_wildcards.asp">veja mais aqui</a></h6>
+ <h6>Tenha cuidado, pois LIKE tende a ser muito perigoso em projetos grandes, porém ainda tem varias outras coisas possiveis nele que não citei, <a href="https://w3schools.com/sql/sql_wildcards.asp">veja mais aqui</a></h6>
 
  - `IN` tipo um `=` só que vc consegue determinar a condicional para varios valores, ex:
  ```sql
