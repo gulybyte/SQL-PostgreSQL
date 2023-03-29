@@ -6,6 +6,7 @@
  - [Començando (psql)](INIT.md)
  - [INSERT e UPDATE e DELETE](INSERT.md)
  - [SELECT's part 1 (básico, where e order by)](SELECT.md)
+ - [SELECT's part 2 (funções de agregação e paginação)](SELECT2.md)
  - [Where, Joins?](/JOIN.md)
 
 # Caracteristicas do PostgreSQL
