@@ -9,5 +9,5 @@
  ```sql
  SELECT * FROM table_name
 	  LIMIT número_de_itens_por_página
-   OFFSET(página - 1) * número_de_itens_por_página
+   	  OFFSET(página - 1) * número_de_itens_por_página;
  ```
