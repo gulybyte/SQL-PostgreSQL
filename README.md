@@ -7,7 +7,8 @@
  - [INSERT e UPDATE e DELETE](INSERT.md)
  - [SELECT's part 1 (básico, where e order by)](SELECT.md)
  - [SELECT's part 2 (funções de agregação, paginação e Aliases)](SELECT2.md)
- - [SELECT's part 3 (Joins...)](SELECT3.md)
+ - [SELECT's part 3 (Relacionamentos entre tabelas)](SELECT3.md)
+ - [SELECT's part 4 (Joins...)](SELECT4.md)
  - [Where, Joins?](/JOIN.md)
 
 # Caracteristicas do PostgreSQL
