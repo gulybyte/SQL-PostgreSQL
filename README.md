@@ -3,12 +3,13 @@
 
 ### Segue e mesma filosofia, não é um tutorial, é só um lugar PARA MIM FAZER CONSULTAS
 
- - [Començando (psql)](INIT.md)
- - [INSERT e UPDATE e DELETE](INSERT.md)
- - [SELECT's part 1 (básico, where e order by)](SELECT.md)
- - [SELECT's part 2 (funções de agregação, paginação e Aliases)](SELECT2.md)
- - [SELECT's part 3 (Relacionamentos entre tabelas)](SELECT3.md)
- - [SELECT's part 4 (Tipos de JOIN's)](SELECT4.md)
+ - [Començando (psql)](INIT.md);
+ - [INSERT e UPDATE e DELETE](INSERT.md);
+ - [SELECT's part 1 (básico, where e order by)](SELECT.md);
+ - [SELECT's part 2 (funções de agregação, paginação e Aliases)](SELECT2.md);
+ - [SELECT's part 3 (Relacionamentos entre tabelas)](SELECT3.md);
+ - [SELECT's part 4 (Tipos de JOIN's)](SELECT4.md);
+ - [SELECT's part 5 (UNION e GROUP BY's)](SELECT5.md);
 
 # Caracteristicas do PostgreSQL
  - <b>ACID - </b> (Atomicidade, Consistencia, Isolament e Durabilidade);
