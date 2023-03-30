@@ -36,6 +36,18 @@
  SELECT SUM(column_name) FROM table_name;
  ```
  
+ # Alias
+ > Para aplicações web costumam ser bem inuteis;
+ - `Alias` ou em SQL `AS`, servem para... Dar um nome temporario (apenas dentro daquela consulta) a tabelas ou colunas, ex coluna:
+ ```sql
+ select city as cidade from customers;
+ ```
+ - ex tabela:
+ ```sql
+ select * from customers as cidade;
+ ```
+
+<h6>Em alguns casos de consultas complexas ele pode ser util, como por exemplo se você é um cara inteligente e não abre mais de 2 conexões com banco de dados no mesmo método, e sim cria um unico SELECT que tras tudo de uma vez, então para não se perder você pode ir dando nome a elas.</h6>
  
  
  
