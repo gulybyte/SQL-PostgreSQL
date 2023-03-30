@@ -42,16 +42,21 @@ insert into funcionario (matricula, nome_funcionario, id_cargo) values
  SELECT * FROM cargo
 	INNER JOIN funcionario ON funcionario.id_cargo = cargo.id;
  ```
+  <img align="right" width="280px" src="/img/inner_join.png">
+ 
  id|nome_cargo|valor_cargo|id|matricula|nome_funcionario|id_cargo|
  | - | - | - | - | - | - | - |
  1|CAIXA     |        800| 1|      100|JOÃO            |       1|
  2|VENDEDOR  |       1200| 2|      110|MARIA           |       2|
  1|CAIXA     |        800| 3|      120|CARLOS          |       1|
+	
  ### `LEFT JOIN`, Esse é massa, veja:
  ```sql
  SELECT * FROM cargo
 	LEFT JOIN funcionario ON funcionario.id_cargo = cargo.id;
  ```
+ <img align="right" width="280px" src="/img/left_join.png">
+ 
  id|nome_cargo|valor_cargo|id|matricula|nome_funcionario|id_cargo|
  | - | - | - | - | - | - | - |
  1|CAIXA     |        800| 1|      100|JOÃO            |       1|
@@ -63,6 +68,8 @@ insert into funcionario (matricula, nome_funcionario, id_cargo) values
  SELECT * FROM cargo
  	RIGHT JOIN funcionario ON funcionario.id_cargo = cargo.id;
  ```
+ <img align="right" width="270px" src="/img/right_join.png">
+ 
  id|nome_cargo|valor_cargo|id|matricula|nome_funcionario|id_cargo|
  | - | - | - | - | - | - | - |
  1|CAIXA     |        800| 1|      100|JOÃO            |       1|
@@ -78,6 +85,8 @@ insert into funcionario (matricula, nome_funcionario, id_cargo) values
 SELECT * FROM cargo
 	FULL JOIN funcionario ON funcionario.id_cargo = cargo.id;
 ```
+<img align="right" width="270px" src="/img/full_join.png">
+
  id|nome_cargo|valor_cargo|id|matricula|nome_funcionario|id_cargo|
  | - | - | - | - | - | - | - |
  1|CAIXA     |        800| 1|      100|JOÃO            |       1|
@@ -90,6 +99,8 @@ SELECT * FROM cargo
 SELECT * FROM cargo
 	CROSS JOIN funcionario;
 ```
+<img align="right" width="290px" src="/img/cross_join.png">
+
  id|nome_cargo|valor_cargo|id|matricula|nome_funcionario|id_cargo|
  | - | - | - | - | - | - | - |
  1|CAIXA     |        800| 1|      100|JOÃO            |       1|
@@ -114,3 +125,7 @@ SELECT * FROM cargo
 
 
 
+<br><br><br>
+<h6>Fiquei com preguiça e peguei muitas imagens do pessoal ai, espero que eles não se importem &#x1F602;&#x1F602;, mas aqui vai de onde peguei:
+<br> https://paulohcc.com/joins-sql-vamos-aprender/
+</h6>
