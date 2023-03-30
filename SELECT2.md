@@ -12,7 +12,8 @@
    	  OFFSET(página - 1) * número_de_itens_por_página;
  ```
 
-<h6>A seguir veremos `MIN`, `MAX`, `COUNT`, `AVG` e `SUM`, que são chamadas de funções SQL de agregação.</h6>
+<h6>A seguir veremos `MIN`, `MAX`, `COUNT`, `AVG` e `SUM`, que são chamadas de funções SQL de agregação.<br>
+Obs: não é possivel fazer WHERE em condicionais de funções agregadas, para isso use <a href="https://www.w3schools.com/sql/sql_having.asp">HAVING</a></h6>
 
 # MIN e MAX
 > Sinceramente não vejo muita ultilidade nisso, talvez com wheres fique interessante
@@ -23,7 +24,7 @@
 
 # COUNT e AVG e SUM
 > são extremamente interessantes, e trazem bastente performance para consultas especificas
- - `COUNT`, confesso que de inicio achei uma bosta, parecia que só servia para contar colunas e achar por exemplo o id máximo (literalmente a mesma coisa que `MAX`), e inclusive ele era bem menos performatico que `MAX` até porque ele conta linha por linha, mas na real ele serve para retornar o número existente de registros, mas ai se pergunta, ué, mas ainda assim se tiver indice na tabela é mais performatico usar um `MAX(id)`, e sim, você está certo, porém eu te pergunto, e se seu ultimo registro estiver deletado?
+ - `COUNT`, confesso que de inicio achei uma bosta, parecia que só servia para contar colunas e achar por exemplo o id máximo (literalmente a mesma coisa que `MAX`), e inclusive ele era bem menos performatico que `MAX` até porque ele conta linha por linha, mas na real ele serve para retornar o número existente de registros, mas ai se pergunta, ué, mas ainda assim se tiver indice na tabela é mais performatico usar um `MAX(id)`, e sim, você está certo, porém eu te pergunto, e se seu ultimo registro estiver deletado? (sim é bem especifico, mas é isso mesmo)
  ```sql
  SELECT COUNT(*) FROM table_name;
  ```
@@ -46,8 +47,7 @@
  ```sql
  select * from customers as cidade;
  ```
-
-<h6>Em alguns casos de consultas complexas ele pode ser util, como por exemplo se você é um cara inteligente e não abre mais de 2 conexões com banco de dados no mesmo método, e sim cria um unico SELECT que tras tudo de uma vez, então para não se perder você pode ir dando nome a elas.</h6>
+Em alguns casos de consultas complexas ele pode ser util, como por exemplo se você é um cara inteligente e não abre mais de 2 conexões com banco de dados no mesmo método, e sim cria um unico SELECT que tras tudo de uma vez, então para não se perder você pode ir dando nome a elas.
  
  
  
