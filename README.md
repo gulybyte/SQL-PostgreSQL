@@ -1,5 +1,5 @@
 # Dos mesmos criadores de [Java-Assuntos-Gerais](https://github.com/gulybyte/Java-Assuntos-Gerais), agora SQL-PostgreSQL
-> No geral eu não pensava em fazer, até por ORM simplificam demais, mas é bom saber o que a por baixo dos panos, e, principalmente porque se eu pegar projetos legados vou ter minha própria "documentação" (e que também serve pra escrever flyway's), além de que tem aqui configurações básicas
+> No geral eu não pensava em fazer, até porque os ORM's simplificam demais, mas é bom saber o que à por baixo dos panos, e, principalmente porque se eu pegar projetos legados vou ter minha própria "documentação" (o que também serve pra escrever flyway's), além de que tem aqui configurações do PostgreSQL que também servem para consultas.
 
 ### Segue e mesma filosofia, não é um tutorial, é só um lugar PARA MIM FAZER CONSULTAS
 
@@ -8,8 +8,7 @@
  - [SELECT's part 1 (básico, where e order by)](SELECT.md)
  - [SELECT's part 2 (funções de agregação, paginação e Aliases)](SELECT2.md)
  - [SELECT's part 3 (Relacionamentos entre tabelas)](SELECT3.md)
- - [SELECT's part 4 (Joins...)](SELECT4.md)
- - [Where, Joins?](/JOIN.md)
+ - [SELECT's part 4 (Tipos de JOIN's)](SELECT4.md)
 
 # Caracteristicas do PostgreSQL
  - <b>ACID - </b> (Atomicidade, Consistencia, Isolament e Durabilidade);
