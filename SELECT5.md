@@ -131,4 +131,3 @@ select nome_fornecedor from fornecedores
 		where produtos.id_fornecedores = fornecedores.id and preco_produto > 5
 	);
 ```
-
