@@ -1,12 +1,12 @@
-# criar banco (não é só isso, geralmente se seta permissões de usuarios, encode, etc...):
+### criar banco (não é só isso, geralmente se seta permissões de usuarios, encode, etc...):
 ```sql
 CREATE DATABASE databasename;
 ```
-# deletar banco:
+### deletar banco:
 ```sql
 DROP DATABASE databasename;
 ```
-# criar tabela:
+### criar tabela:
 ```sql
 CREATE TABLE table_name (
     column1 datatype,
@@ -15,11 +15,11 @@ CREATE TABLE table_name (
    ....
 );
 ```
-# deletar tabela:
+### deletar tabela:
 ```sql
 DROP TABLE table_name;
 ```
-# alterar tabela (serve para quando a tabela já está criada e não que deletar e inserir todos dados novamente):
+### alterar tabela (serve para quando a tabela já está criada e não que deletar e inserir todos dados novamente):
 ```sql
 ALTER TABLE table_name
 ADD column_name datatype;
