@@ -41,3 +41,11 @@ UPDATE table_name SET column1 = 'value1', column2 = 'value2' WHERE id = 2;
 ```sql
 DELETE FROM table_name WHERE id = 2;
 ```
+
+## Seja performatico
+> quer fazer duplicação de dados simples?:
+```sql
+-- SQL generico
+insert into fornecedores_servico1 (nome_fornecedor)
+select nome_fornecedor from fornecedores_servico2;
+```
