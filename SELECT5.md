@@ -95,3 +95,40 @@ GROUP BY cidade;
 ```
 
 <h6>Obs: peguei o exemplo do ORDER BY do excelentissimo professor da Boson treinamentos, segue link: http://www.bosontreinamentos.com.br/mysql/mysql-group-by-agrupamento-de-registros-26/</h6>
+
+
+
+# EXISTS
+> sql de uso:
+```sql
+create table fornecedores (
+	id bigserial primary key not null,
+	nome_fornecedor VARCHAR(80)
+);
+
+create table produtos (
+	id bigserial primary key not null,
+	nome_produto VARCHAR(80),
+	preco_produto int,
+	id_fornecedores bigint not null references fornecedores (id)
+);
+
+insert into fornecedores (nome_fornecedor) values
+('João'),
+('Paulo'),
+('Henrique'),
+('Desmond');
+
+insert into produtos (nome_produto, preco_produto, id_fornecedores) values
+('Cartas UNO', 5, 1),
+('Vassoura', 8, 4),
+('Assinatura Cloud', 50, 2);
+```
+Digamos que queira trazer o nome dos fornecedores somente se existir alguma venda acima de 5 reais feita por ele, com `EXISTS` fara assim:
+```sql
+select nome_fornecedor from fornecedores
+	where exists (select nome_produto from produtos
+		where produtos.id_fornecedores = fornecedores.id and preco_produto > 5
+	);
+```
+
