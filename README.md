@@ -35,3 +35,18 @@
    - <b>indexaçāo avançada</b> (b-tree, hash, GiST, GIN..):
    - <b>suporte a JSON</b> (para aplicações web):
  - <b>Seguro - </b> autenticação, criptografia de dados, controle de acesso, auditoria para acompanhar as atividades do usuario;
+ 
+ # Guia de Escolha de banco de dados e porque RDBMS é a principal escolha?:
+<img src="/img/database.png" />
+<h6>Qual foi, da favorito ai no repositorio deu trabalho fazer essa imagem kk</h6>
+ 
+## Bônus: PostgreSQL na AWS
+|         <img src="/img/postgres.png" /> Dados           | <img src="/img/Arch_Amazon-EC2_64.png" /> <br> ec2 manual config PostgreSQL | <img src="/img/Arch_Amazon-RDS_64.png" /> <br> Amazon RDS <br>for<br> PostgreSQL | <img src="/img/Arch_Amazon-Aurora_64.png" /> <br> Aurora <br>for<br> PostgreSQL | <img src="/img/Arch_Amazon-Aurora_64.png" /> <br> Aurora <br>Serveless<br> PostgreSQL | <img src="/img/Arch_Amazon-Redshift_64.png" /> <br> Amazon <br>Redshift<br> PostgreSQL | <img src="/img/Arch_Amazon-RDS-on-VMware_64.png" /> <br> Amazon RDS <br> on <br> VMware |
+|---------------------|------------------------------|----------------------------|-------------------|------------------------------|-----------------------------|--------------------|
+| Gerenciamento geral | Manualmente                   | Gerenciado                 | Gerenciado        | Gerenciado                   | Gerenciado                  | Gerenciado         |
+| Preço                | Baixo/Médio                         | Médio/Alto                      | Alto             | Médio/Alto                        | Alto                        | Médio              |
+| Uso ideal            | Pequenos projetos             | Projetos de tamanho médio  | Projetos de grande porte | Projetos de qualquer tamanho | Data warehousing            | Virtualização      |
+| Ambientes uso | Personalizados e com alto controle sobre a infraestrutura | Facilidade de gerenciamento e escalabilidade | Alta disponibilidade e escalabilidade | Picos de demanda sem previsibilidade | Data warehouse de alta performance e escalabilidade | on-premises em migração |
+| Vantagens        | Controle total sobre a infraestrutura e flexibilidade para personalizar o ambiente | Gerenciamento simplificado, escalabilidade automatizada, monitoramento e backups automáticos | Alta disponibilidade, escalabilidade e desempenho, com armazenamento compartilhado e failover automático | Escalabilidade automática com gerenciamento simplificado e baixo custo para cargas de trabalho intermitentes | Alto desempenho em cargas de trabalho de data warehouse, escalabilidade e gerenciamento simplificado | Flexibilidade para migrar ambientes on-premises para a nuvem, sem alterações na infraestrutura existente |
+| Desvantagens     | Necessita de conhecimentos técnicos avançados para configurar e gerenciar a infraestrutura | Limitações em termos de personalização e controle sobre a infraestrutura | Armazenamento dedicado, o que pode aumentar os custos | Não recomendado para cargas de trabalho contínuas e com demanda constante | Não é indicado para cargas de trabalho transacionais e com baixa latência | Requer uma infraestrutura VMware existente, o que pode aumentar os custos |
+
