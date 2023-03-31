@@ -7,7 +7,7 @@
 
 <h6><a href="/GUIA.md">Guia aqui para quem não entende muito de banco de dados</a></h6>
 
-## Caracteristicas com tutoriais do PostgreSQL
+## Caracteristicas com guias no PostgreSQL
  - <b>psql - </b>Linguagem SQL especifica do postgres;
       - [Començando (psql)](INIT.md);
  - <b>SQL - </b>Leitura atômica e complexa;
