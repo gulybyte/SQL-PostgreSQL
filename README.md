@@ -18,7 +18,7 @@
       - [SELECT's part 3 (Relacionamentos entre tabelas)](SELECT3.md);
       - [SELECT's part 4 (Tipos de JOIN's)](SELECT4.md);
       - [SELECT's part 5 (UNION, GROUP BY's e EXISTS)](SELECT5.md);
-      - [SELECT's part 6 (...)](SELECT6.md);
+      - [SELECT's part 6 (CASE e PROCEDURES)](SELECT6.md);
  - <b>ACID - </b> (Atomicidade, Consistencia, Isolament e Durabilidade);
  - <b>MVVC - </b> Controle de Concorrência Multiversão;
  - <b>Views - </b> views materializadas, procedimentos armazenados, triggers e outros tipos de objetos para Bancos Relacionais;
