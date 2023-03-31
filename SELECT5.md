@@ -1,5 +1,6 @@
  - [UNION](#union);
  - [GROUP BY](#group-by);
+ - [EXISTS](#exists);
 
 # UNION
 > SQL de uso:
