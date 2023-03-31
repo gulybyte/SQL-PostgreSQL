@@ -9,7 +9,8 @@
  - [SELECT's part 2 (funções de agregação, paginação e Aliases)](SELECT2.md);
  - [SELECT's part 3 (Relacionamentos entre tabelas)](SELECT3.md);
  - [SELECT's part 4 (Tipos de JOIN's)](SELECT4.md);
- - [SELECT's part 5 (UNION e GROUP BY's)](SELECT5.md);
+ - [SELECT's part 5 (UNION, GROUP BY's e EXISTS)](SELECT5.md);
+ - [SELECT's part 6 (...)](SELECT6.md);
 
 # Caracteristicas do PostgreSQL
  - <b>ACID - </b> (Atomicidade, Consistencia, Isolament e Durabilidade);
